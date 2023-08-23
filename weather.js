@@ -277,7 +277,7 @@ const getData = function () {
 };
 
 const deleteData = function () {
-  localStorage.clear("data");
+  localStorage.clear("weatherdata");
 };
 document.documentElement.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
