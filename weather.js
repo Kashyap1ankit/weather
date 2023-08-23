@@ -202,11 +202,11 @@ const getWeather = function () {
 };
 
 const _storeData = function () {
-  localStorage.setItem("data", JSON.stringify(_history));
+  localStorage.setItem("weatherdata", JSON.stringify(_history));
 };
 
 const getData = function () {
-  const dataToDisplay = JSON.parse(localStorage.getItem("data"));
+  const dataToDisplay = JSON.parse(localStorage.getItem("weatherdata"));
   console.log(dataToDisplay);
 
   if (dataToDisplay.length > 4) {
